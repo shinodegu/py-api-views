@@ -28,8 +28,8 @@ urlpatterns = [
     path("genres/<int:pk>/", GenreDetail.as_view(), name="genre-detail"),
     path("actors/", ActorList.as_view(), name="actors"),
     path("actors/<int:pk>/", ActorDetail.as_view(), name="actor-detail"),
-    path("cinema_hall/", cinema_list, name="cinema-hall"),
-    path("cinema_hall/<int:pk>/", cinema_detail, name="cinema-detail"),
+    path("cinema_halls/", cinema_list, name="cinema-hall"),
+    path("cinema_halls/<int:pk>/", cinema_detail, name="cinema-detail"),
     path("", include(router.urls)),
 
 ]

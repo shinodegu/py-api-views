@@ -33,7 +33,7 @@ class CinemaHall(models.Model):
         return f"Cinema hall name: {self.name}, rows: {self.rows}, seats: {self.seats_in_row}"
 
     class Meta:
-        verbose_name_plural = "cinema_halls"
+        verbose_name_plural = "cinema halls"
 
 
 class Movie(models.Model):
